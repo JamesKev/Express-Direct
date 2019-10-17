@@ -64,12 +64,17 @@ header h1{
     margin: 0 1em;
     padding: 0;
     border: 2px solid black;
+    float: none;
 }
 
-.buttonContainer{
+.buttonContainerFlex{
+    display: flex;
+    flex-direction: row;
     margin: auto;
     
 }
+
+
 
 .sendButtons{
     background-image: url();
@@ -79,13 +84,13 @@ header h1{
     border: none;
     margin: 0 6em 0 6em;
     font-size: 16px;
+
+    flex: 1 1 50%;
 }
 
 #recieveContainer{
-    text-align: right;
+    text-align: left;
     margin-left: 1em; 
-    
-    
 }
 .recieveButtons{
     background-image: url();
@@ -95,8 +100,54 @@ header h1{
     border: none;
     font-size: 16px;
     
+    flex: 1 1 50%;
+}
+/* content global css */
+.contentContainerFlex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    
 }
 
+.fileName{
+    flex: 1 1 80%;
+    text-align: left;
+    
+}
+
+.fileSize{
+    flex: 1 1 20%;
+}
+
+/* File Header CSS */
+.fileHeader{
+    border-bottom: 2px solid black;
+}
+.fileHeaderInlineBorder{
+    border-right: 2px solid black;
+}
+#fileNamePlacement{
+    padding-left: 20px; 
+}
+#fileSizePlacement{
+    text-align: right;
+    padding-right: 30px;
+}
+/* File and Size list */
+.fileList{
+    padding-left: 20px;
+    list-style-type: none;
+}
+.fileListSize{
+    list-style-type: none;
+    padding-right: 10px;
+}
+ol li{
+    margin: 0;
+    padding: 0;
+}
 
 
 

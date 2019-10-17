@@ -21,28 +21,62 @@
         </header>
         <main class="flexBox">
 
+            <!-- Send Flex Box -->
             <div class="subFlexBox" id="item">
                 <h2 class="titles">Send</h2>
                 <div class="fileArea">
-                    
+
+                    <div class="contentContainerFlex fileHeader">
+                        <div class="fileName fileHeaderInlineBorder" id="fileNamePlacement">File Name</div>
+                        <div class="fileSize" id="fileSizePlacement">Size</div>
+                    </div>
+                    <div class="contentContainerFlex">
+                        <div class="fileName">
+                            <ol class="fileList" id="sentFile">
+                                
+                            </ol>
+                        </div>
+                        <div class="fileSize">
+                            <ol class="fileListSize" id="sizes">
+                                
+                            </ol>
+                        </div>
+                    </div>
                 </div>
-                <div class="buttonContainer">
-                    <button class="sendButtons" type="button">Add</button>
+                <div class="buttonContainerFlex">
+                    <input class="sendButtons" id="fileInput" type="button" value="Add">
                     
-                    <button class="sendButtons" type="button">Send</button>
+                    <input class="sendButtons" type="button" value="Send">
                 </div>
             </div>
-                
+            
+
+            <!-- Recieve Flex Box -->
             <div class="subFlexBox" id="item">
                 <h2 class="titles">Recieve</h2>
 
                 <div class="fileArea">
-                    <p><span>File Name</span> <span>Size</span></p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate accusamus vero tenetur deleniti ea modi?</p>
+
+                    <div class="contentContainerFlex fileHeader">
+                        <div class="fileName fileHeaderInlineBorder" id="fileNamePlacement">File Name</div>
+                        <div class="fileSize" id="fileSizePlacement">Size</div>
+                    </div>
+                    <div class="contentContainerFlex">
+                        <div class="fileName">
+                            <ol class="fileList" id="recieveFile">
+                                
+                            </ol>
+                        </div>
+                        <div class="fileSize">
+                            <ol class="fileListSize" id="recieveFileSizes">
+                                
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             
                 
-                <div class="buttonContainer" id="recieveContainer">
+                <div class="buttonContainerFlex" id="recieveContainer">
                     <input class="buttonContainer"  type="text" name="value" placeholder="Numeric Key">
                     <button class="recieveButtons" type="button">Recieve</button>
                     
@@ -55,5 +89,7 @@
     <section class="banner">
 
     </section>
+    <script src="scripts/sender.js"></script>
+    <script src="scripts/reciever.js"></script>
 </body>
 </html>
