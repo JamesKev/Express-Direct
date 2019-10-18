@@ -88,11 +88,11 @@ header h1{
     flex: 1 1 50%;
 }
 
-#recieveContainer{
+#receiveContainer{
     text-align: left;
     margin-left: 1em; 
 }
-.recieveButtons{
+.receiveButtons{
     background-image: url();
     background: none;
     background-repeat: no-repeat;
@@ -142,11 +142,12 @@ header h1{
 }
 .fileListSize{
     list-style-type: none;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 ol li{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 
